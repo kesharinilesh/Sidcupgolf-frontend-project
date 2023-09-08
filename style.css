@@ -63,7 +63,7 @@ video{
     color: #000;
     top:-4px;
     left:-4px;
-    -webkit-text-stroke: 3px #95C11E;
+    -webkit-text-stroke: 2px #95C11E;
     z-index: -1;
 }
 #page1 h2{
@@ -76,4 +76,8 @@ video{
     font-size: 20px;
     font-weight: 400;
     width:40%;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
 }
