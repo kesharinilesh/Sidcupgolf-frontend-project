@@ -9,8 +9,11 @@
 html,body {
     height: 100%;
     width: 100%;
+    position: relative;
 }
-
+#main{
+    position: relative;
+}
 #nav{
     height: 130px;
     width: 100%;
@@ -35,7 +38,7 @@ html,body {
     width: 18px;
     background-color: #95C11E;
     border-radius: 50%;
-    position:fixed;
+    position:absolute;
     z-index: 99;
     transition: all linear 0.3s; 
 } 
@@ -45,7 +48,8 @@ html,body {
     background-color: #85a93d;
     border-radius: 50%;
     z-index: 9;
-    position:fixed;
+    position:absolute;
+    pointer-events: none;
     /* transition: all linear 0.3s; */
     filter:blur(200px)
 }
@@ -224,6 +228,7 @@ video{
     padding-top:100px;
     opacity:0;
     transition: all ease 0.6s;
+    z-index: 9;
 }
 
 .overlay h4{
@@ -243,5 +248,5 @@ video{
     opacity:1;
 }
 .card:hover{
-    transform: rotate3d(1,1,0,15deg);
+    transform: rotate3d(1,-1,0,15deg);
 }
