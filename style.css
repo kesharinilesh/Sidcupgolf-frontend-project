@@ -104,6 +104,7 @@ video{
 #scroller{
     /* background-color: red; */
     white-space: nowrap;
+    padding:0px 0px 90px;
     overflow-x:auto;
     overflow-y:hidden;
     position:relative;
@@ -140,4 +141,39 @@ video{
     to{
         transform:translateX(-100%);
     }
+}
+
+#about-us{
+    height:40vh;
+    width:100%;
+    /* background-color: red; */
+    display:flex;
+    padding:0px 50px;
+    align-items:center;
+    justify-content: space-around;
+    position:relative;
+    z-index: 10;
+}
+
+#about-us img{
+    height:140px;
+    width:140px;
+    border-radius:10px;
+    /* padding:10px; */
+    object-fit:cover;
+}
+
+#about-us-in{
+    width:55%;
+    text-align:center;
+}
+
+#about-us h3{
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+#about-us-in p{
+    font-size:17px;
+    line-height:26px;
 }
