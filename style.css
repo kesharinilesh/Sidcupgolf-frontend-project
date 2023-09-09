@@ -187,7 +187,7 @@ video{
 
 #cards-container{
     /* background-color: red; */
-    height:60vh;
+    height:80vh;
     display: flex;
     align-items: top;
     margin-bottom: 80px;
@@ -197,11 +197,13 @@ video{
 }
 .card{
     height:80%;
-    width: 22%;
+    width: 25%;
     border-radius:10px;
     /* background-color: blue; */
     background-size:cover;
     background-position:center;
+    overflow: hidden;
+    transition: all ease 0.6s;
 }
 #card1{
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1);
@@ -212,4 +214,34 @@ video{
 }
 #card3{
     background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1);
+}
+
+.overlay{
+    height:100%;
+    width:100;
+    background-color: #95C11E;
+    padding:20px;
+    padding-top:100px;
+    opacity:0;
+    transition: all ease 0.6s;
+}
+
+.overlay h4{
+    color:#000;
+    font-size: 40px;   
+    font-weight: 800;
+    text-transform: uppercase;
+    /* white-space: nowrap; */
+    margin-bottom: 10px;
+}
+.overlay p{
+    color: #000;
+    font-size:18px;
+    line-height:30px;
+}
+.card:hover .overlay{
+    opacity:1;
+}
+.card:hover{
+    transform: rotate3d(1,1,0,15deg);
 }
