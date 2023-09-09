@@ -12,13 +12,13 @@ html,body {
 }
 
 #nav{
-    height: 145px;
+    height: 130px;
     width: 100%;
     /* background-color: red; */
     display: flex;
-    padding: 0 110px;
+    padding: 0 120px;
     align-items: center;
-    gap:60px;
+    gap:50px;
     justify-content: flex-start;
     position: fixed;
     z-index: 99;
@@ -37,6 +37,7 @@ html,body {
     border-radius: 50%;
     position:fixed;
     z-index: 99;
+    transition: all linear 0.1s;
 }
 #cursor-blur {
     height: 280px;
@@ -108,9 +109,9 @@ video{
     position:relative;
     z-index:10;
 }
-/* #scroller::-webkit-scrollbar{
+#scroller::-webkit-scrollbar{
     display:none;
-} */
+}
 #scroller-in{
     display:inline-block;
     white-space: nowrap;
