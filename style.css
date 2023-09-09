@@ -37,16 +37,17 @@ html,body {
     border-radius: 50%;
     position:fixed;
     z-index: 99;
-    transition: all linear 0.1s;
-}
+    transition: all linear 0.3s; 
+} 
 #cursor-blur {
-    height: 280px;
-    width: 280px;
+    height: 360px;
+    width: 360px;
     background-color: #85a93d;
     border-radius: 50%;
     z-index: 9;
     position:fixed;
-    filter:blur(100px)
+    /* transition: all linear 0.3s; */
+    filter:blur(200px)
 }
 video{
     height: 100%;
@@ -97,7 +98,7 @@ video{
     width:40%;
 }
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     z-index: 10;
 }
@@ -109,6 +110,9 @@ video{
     overflow-y:hidden;
     position:relative;
     z-index:10;
+    margin-bottom: 80px;
+    align-items: center
+    
 }
 #scroller::-webkit-scrollbar{
     display:none;
@@ -117,16 +121,17 @@ video{
     display:inline-block;
     white-space: nowrap;
     animation:scroll;
-    animation-duration: 25s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 #scroller h4{
-    display:inline-block;
+    display:inline;
     font-size:120px;
     font-weight: 800;
     font-family: gilroy;
     margin-right:10px;
+    margin-bottom: 80px;
     transition:all linear 0.5s;
     color:transparent;
     -webkit-text-stroke:2px #95C11E
@@ -148,19 +153,21 @@ video{
     width:100%;
     /* background-color: red; */
     display:flex;
-    padding:0px 50px;
+    padding:0px 80px;
     align-items:center;
     justify-content: space-around;
     position:relative;
     z-index: 10;
+    
 }
 
 #about-us img{
-    height:140px;
-    width:140px;
+    height:180px;
+    width:180px;
     border-radius:10px;
-    /* padding:10px; */
     object-fit:cover;
+    margin-top: 20px;
+    
 }
 
 #about-us-in{
@@ -169,11 +176,40 @@ video{
 }
 
 #about-us h3{
-    font-size: 38px;
+    font-size: 45px;
     font-weight: 800;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 #about-us-in p{
-    font-size:17px;
-    line-height:26px;
+    font-size:20px;
+    line-height:40px;
+}
+
+#cards-container{
+    /* background-color: red; */
+    height:60vh;
+    display: flex;
+    align-items: top;
+    margin-bottom: 80px;
+    justify-content: center;
+    gap: 80px;
+    z-index: 10;
+}
+.card{
+    height:80%;
+    width: 22%;
+    border-radius:10px;
+    /* background-color: blue; */
+    background-size:cover;
+    background-position:center;
+}
+#card1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1);
+    
+}
+#card2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C1024&ssl=1);
+}
+#card3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C682&ssl=1);
 }
