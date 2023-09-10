@@ -2,16 +2,16 @@ var crsr = document.querySelector("#cursor");
 var blur = document.querySelector("#cursor-blur");
 
 document.addEventListener("mousemove", function (dets) {
-    crsr.style.left = dets.clientX-10 + "px";
-    crsr.style.top = dets.clientY -10+ "px";
+    crsr.style.left = dets.x-10 + "px";
+    crsr.style.top = dets.y -10+ "px";
     blur.style.left = dets.x - 165 + "px";
     blur.style.top = dets.y - 165 + "px";
 });
 
-var h4all = document.querySelectorAll("#nav h4");
+var h4all = document.querySelectorAll("#nav h4,#nav img,#f1 img, #footer h3, .card, #arrow");
 h4all.forEach(function (elem) {
     elem.addEventListener("mouseenter", function () {
-    crsr.style.scale = 3;
+    crsr.style.scale = 4;
     crsr.style.border = "1px solid #fff";
     crsr.style.backgroundColor = "transparent";
     });
@@ -63,9 +63,9 @@ gsap.from("#about-us img,#about-us-in", {
 });
 gsap.from(".card", {
     scale: 0.8,
-    opacity:0,
+    // opacity:0,
     duration: 0.5,
-    stagger: 0.05,
+    // stagger: 0.05,
     scrollTrigger: {
     trigger: ".card",
     scroller: "body",
@@ -105,8 +105,8 @@ gsap.from("#page4 h1", {
     trigger: "#page4 h1",
     scroller: "body",
     // markers:true,
-    start: "top 75%",
-    end: "top 70%",
+    start: "top 85%",
+    end: "top 80%",
     scrub: 3,
     },
 });

@@ -44,31 +44,40 @@ body {
 #nav img {
     height: 4.5vw;
 }
+#nav img:hover {
+    scale:1.1;
+    transition: 0.2s;
+}
 #nav h4 {
     text-transform: uppercase;
     font-weight: 500;
     cursor: pointer;
     font-size: 1.15vw;
 }
+#nav h4:hover {
+    scale: 1.1;
+    transition-duration: 0.2s;
+    color: #95c11e;
+}
 #cursor {
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     background-color: #95c11e;
     border-radius: 50%;
     position: fixed;
     z-index: 99;
-    
+    transition: scale linear 0.2s;
     pointer-events: none;
     /* transition: all 0.5s ease-out; */
 }
 #cursor-blur {
     height: 330px;
     width: 330px;
-    background-color: #85a93d;
+    background-color: #89af3d;
     border-radius: 50%;
     z-index: 9;
     position: fixed;
-    /* transition: all 0.3s ease-out; */
+    /* transition: all 0.5s ease-out; */
     filter: blur(175px);
 }
 video {
@@ -357,7 +366,6 @@ video {
     border-radius: 20px;
     position: relative;
 }
-
 .elem h2 {
     height: 100%;
     width: 100%;
@@ -389,7 +397,7 @@ video {
 #page4 h1 {
     font-size: 5.6vw;
     position: absolute;
-    top: -15%;
+    top: -25%;
     font-weight: 900;
     font-family: gilroy;
     color: #000;
@@ -455,4 +463,13 @@ video {
     font-weight: 600;
     line-height: 20px;
     margin-bottom: 8px;
+}
+#footer h3:hover {
+    scale: 1.1;
+    transition-duration: 0.2s;
+    color: #fff;
+}
+#f1 img:hover {
+    scale:1.1;
+    transition: 0.2s;
 }
