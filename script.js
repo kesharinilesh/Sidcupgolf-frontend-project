@@ -64,8 +64,8 @@ gsap.from("#about-us img,#about-us-in", {
 gsap.from(".card", {
     scale: 0.8,
     opacity:0,
-    duration: 1,
-    stagger: 0.1,
+    duration: 0.5,
+    stagger: 0.05,
     scrollTrigger: {
     trigger: ".card",
     scroller: "body",
