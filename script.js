@@ -111,4 +111,3 @@ gsap.from("#page4 h1", {
     },
 });
 
-// Thanks itna aage tak aane ke liye lekin pura code utha ke copy paste karne ki jagah khud ek baar banane ka try karna, kuch naya seekhne ko milega!

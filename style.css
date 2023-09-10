@@ -57,7 +57,9 @@ body {
     border-radius: 50%;
     position: fixed;
     z-index: 99;
-    transition: all 0.5s ease-out;
+    
+    pointer-events: none;
+    /* transition: all 0.5s ease-out; */
 }
 #cursor-blur {
     height: 330px;
@@ -66,8 +68,7 @@ body {
     border-radius: 50%;
     z-index: 9;
     position: fixed;
-    pointer-events: none;
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
     filter: blur(175px);
 }
 video {
@@ -163,7 +164,7 @@ video {
     display: inline-block;
     white-space: nowrap;
     animation: scroll;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
