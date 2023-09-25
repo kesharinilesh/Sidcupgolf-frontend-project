@@ -52,9 +52,10 @@ body {
 #nav h4 {
     text-transform: uppercase;
     font-weight: 500;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 1.15vw;
 }
+
 #nav h4:hover {
     scale: 1.1;
     transition-duration: 0.2s;
@@ -166,6 +167,7 @@ video {
     z-index: 10;
     margin-bottom: 80px;
     align-items: center;
+    /* pointer-events:none; */
 }
 #scroller::-webkit-scrollbar {
     display: none;
@@ -176,13 +178,13 @@ video {
     animation: scroll;
     animation-duration: 40s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 10;
 }
 #scroller h4 {
     display: inline;
     font-size: 130px;
     font-weight: 800;
-    font-family: gilroy;
+    font-family: 'gilroy';
     margin-right: 10px;
     margin-bottom: 80px;
     transition: all linear 0.5s;
