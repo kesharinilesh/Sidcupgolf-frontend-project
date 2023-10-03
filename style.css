@@ -52,7 +52,7 @@ body {
 #nav h4 {
     text-transform: uppercase;
     font-weight: 500;
-    /* cursor: pointer; */
+    cursor: pointer;
     font-size: 1.15vw;
 }
 
@@ -155,7 +155,7 @@ video {
 #page2 {
     min-height: 100vh;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 }
 #scroller {
     /* background-color: red; */
@@ -178,9 +178,9 @@ video {
     animation: scroll;
     animation-duration: 40s;
     animation-timing-function: linear;
-    animation-iteration-count: 10;
+    animation-iteration-count: infinite;
 }
-#scroller h4 {
+#scroller h4{
     display: inline;
     font-size: 130px;
     font-weight: 800;
@@ -191,7 +191,7 @@ video {
     color: black;
     -webkit-text-stroke: 2px #fff;
 }
-#scroller h4:hover {
+#scroller h4:hover{
     color: #95c11e;
 }
 @keyframes scroll {
