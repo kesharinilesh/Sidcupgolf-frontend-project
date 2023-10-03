@@ -1,6 +1,6 @@
-# Sidcup Family Golf Clone Project
+# Sidcup Family Golf Website Clone
 
-This project is a front-end clone of the Sidcup Family Golf website. It aims to replicate the design and functionality of the original website using HTML, CSS, and JavaScript. The project is hosted on Vercel and can be accessed at [Sidcup Family Golf Clone](https://sidcupgolf-nilesh.vercel.app/).
+This project is a front-end clone of the Sidcup Family Golf website. It aims to replicate the design and functionality of the original website using HTML, CSS, and JavaScript. The project is hosted on Vercel and can be accessed at [Sidcup Family Golf Website Clone](https://sidcupgolf-nilesh.vercel.app/).
 
 ## Features
 
@@ -10,6 +10,6 @@ This project is a front-end clone of the Sidcup Family Golf website. It aims to 
 
 ## Demo
 
-You can access the live demo of this project at [Sidcup Family Golf Clone](https://sidcupgolf-nilesh.vercel.app/).
+You can access the live demo of this project at [Sidcup Family Golf Website Clone](https://sidcupgolf-nilesh.vercel.app/).
 
 
